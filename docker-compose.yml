@@ -1,0 +1,17 @@
+version: '3'
+# PUT THIS BACK INTO THE WEB BUILD COMMAND 
+# ./manage.py makemigrations livechat && ./manage.py migrate && ./manage.py createdbuser && ./manage.py updateusers --verbose && 
+
+services:
+  web:
+    build: .
+    command: sh -c './manage.py makemigrations livechat && ./manage.py migrate && ./manage.py runserver 0.0.0.0:8000'
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+  rtm:
+    build: .
+    command: sh -c './manage.py rtm'
+    volumes:
+      - .:/code

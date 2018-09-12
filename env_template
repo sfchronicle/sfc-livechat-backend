@@ -1,0 +1,17 @@
+# .env
+
+[django]
+secret_key = 
+slack_app_token = 
+slack_bot_token = 
+slack_verification_token = 
+db_user = 
+db_pass = 
+db_host = 
+placeholder_img = 
+photo_drop_url = 
+photo_domain = 
+ftp_server = 
+ftp_username =
+ftp_password = 
+ftp_directory = 

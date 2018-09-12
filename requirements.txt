@@ -1,0 +1,8 @@
+Django==2.0.5
+mysqlclient
+pillow
+django-cors-headers==2.2.0
+configparser==3.5.0
+slackclient==1.2.1
+slackdown==0.0.3
+requests==2.19.1
